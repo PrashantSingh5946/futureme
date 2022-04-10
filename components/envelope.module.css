@@ -1,0 +1,68 @@
+
+.envelope {
+    position: absolute;
+    left:25%;
+    top:40%;
+    width: 200px;
+    height: 110px;
+    background: #afafaf;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 1px #c5c4c4 inset;
+  }
+  .envelope:before,
+  .envelope:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-width: 55px 100px;
+  }
+  .envelope:before {
+    border-bottom-color: #dedede;
+    top: -100%;
+    left: 0px;
+  }
+  .envelope:after {
+    border-right-color: #e3e3e3;
+    border-left-color: #fff;
+    border-bottom-color: #fff;
+    top: 0;
+    border-radius: 0 0 5px 5px;
+    transform: rotate(360deg);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  }
+  
+  .paper {
+    background: rgb(0, 195, 255);
+    width: 186px;
+    height: 116px;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: absolute;
+    left: 6px;
+    top: -33px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  }
+  .paper:before,
+  .paper:after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    background: #e3f1fc;
+    height: 4px;
+    border-radius: 5px;
+  }
+  .paper:before {
+    top: 14px;
+    width: 31px;
+  }
+  .paper:after {
+    right: 12px;
+    top: 28px;
+    box-shadow:
+      0 8px 0 #e3f1fc,
+      0 16px 0 #e3f1fc,
+      0 24px 0 #e3f1fc,
+      0 40px 0 #e3f1fc;
+  }
