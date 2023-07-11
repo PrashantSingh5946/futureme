@@ -15,7 +15,7 @@ async function sendMail(recipient, subject, message){
         from: process.env.OUTLOOK_USER_NAME,
         to: recipient,
         subject: subject,
-        text: message
+        html: message
       };
       
       await transporter.sendMail(mailOptions);
